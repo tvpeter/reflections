@@ -1,0 +1,24 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initialize a new repo, git informs you that it has initialized an empty repo in the 
+given location. This means that git creates its own directory called .git which by default
+is hidden in most file explorers. This .git directory holds the meta data about the history 
+of the repository/working directory. Git uses the .git to keep track of the state of the working directory. If you have
+not made any commits before, running git status will indicate that there a no commit yets,
+and it will also show you the list of files that are not yet been tracked.
+
+Why we need to initialize git, before git begins to keep track of your files, it must make use of
+the .git directory which it creates when it was initialized.
+
+If you accidentally add a file to the staging area, you can remove it using git reset. For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet, run git reset lesson_2_reflections.txt
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area is different from the working directory in that, it serves as a temporarily 
+holding area before commits can be made. It helps to hold all the files that you would like to
+commit at once, which you can add them one at a time to the area, while the working directory is
+the folder you are currently working in. It has all the files and the .git repo.
+
+The staging area offers a safe place to add/keep all logically related files/changes that one would like to commit at once.
+
+
