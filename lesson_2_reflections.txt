@@ -34,29 +34,29 @@ order can be committed.
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
-Branches in git help when new features are to be added, or experimental features are to be added
-without directly affecting the master branch/production branch. Branches set the stage to fully test out features
-and if they are deemed to be good enough, can be added to the master branch. Things can likely 
-break in the branches and fixed, but when they are in branches, they can easily be fixed.
-This helps in ensuring that features/experimental features are not directly implemented on the master/production branch especially when you are sharing the project with others.
+	Branches in git help when new features are to be added, or experimental features are to be added
+	without directly affecting the master branch/production branch. Branches set the stage to fully test out features
+	and if they are deemed to be good enough, can be added to the master branch. Things can likely 
+	break in the branches and fixed, but when they are in branches, they can easily be fixed.
+	This helps in ensuring that features/experimental features are not directly implemented on the master/production branch especially when you are sharing the project with others.
 
 How do the diagrams help you visualize the branch structure?
 
-Diagrams shows the relationship between branches and their commits. It indicate commits' parents and the children. This
-structure shows a detailed information of those commits whose history are reachable and unreachable. 
+	Diagrams shows the relationship between branches and their commits. It indicate commits' parents and the children. This
+	structure shows a detailed information of those commits whose history are reachable and unreachable. 
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
-When two branches are merged, git adds a new commit that brings together the changes made in both branches together. The head/tip
-of git points to the checked out branch before the merge. The commits that were made in both branches are accessible in the checkout branch and the commits are arranged according to the time they were made. This makes it difficult to identify which
-commit is the parent of a particular commit. However, you can always use 'git show commit_id' to examine changes that were introduced in a particular commit compare to its parent.
-Even if the branch (label) was deleted, its commit are still accessible after the merge.
-Depending on the changes introduced in the branches, sometimes merging results in conflict. This happens when changes were made to similar lines of the code in the same file(s). Git will always point out points of conflict for reconciliation before proceeding.
+	When two branches are merged, git adds a new commit that brings together the changes made in both branches together. The head/tip
+	of git points to the checked out branch before the merge. The commits that were made in both branches are accessible in the checkout branch and the commits are arranged according to the time they were made. This makes it difficult to identify which
+	commit is the parent of a particular commit. However, you can always use 'git show commit_id' to examine changes that were introduced in a particular commit compare to its parent.
+	Even if the branch (label) was deleted, its commit are still accessible after the merge.
+	Depending on the changes introduced in the branches, sometimes merging results in conflict. This happens when changes were made to similar lines of the code in the same file(s). Git will always point out points of conflict for reconciliation before proceeding.
 
-Merging can be seen represented as done because it clearly indicate bringing together two branches and still been able to access 
-commits on both branches. The diagram even indicates those commit unreachable and those reachable after a merge.
+	Merging can be seen represented as done because it clearly indicate bringing together two branches and still been able to access 
+	commits on both branches. The diagram even indicates those commit unreachable and those reachable after a merge.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
 
-Git automatic merging takes care of a lot behind the scenes. However, when there are conflicts, merging has to be done manually, which involves identifying those areas of conflicts and resolving each before completing the merge. This can sometimes be cubersome, therefore its always better to strive for automatic merging by git.
+	Git automatic merging takes care of a lot behind the scenes. However, when there are conflicts, merging has to be done manually, which involves identifying those areas of conflicts and resolving each before completing the merge. This can sometimes be cubersome, therefore its always better to strive for automatic merging by git.
 

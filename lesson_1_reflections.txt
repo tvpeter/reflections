@@ -1,55 +1,55 @@
 Using diff -u and fc to compare differences for files
 
-To be able to see the difference between two versions of a file, 
-use the diff command on unix-based OSs with a -u flag. On Windows however,
-make use of the fc command which means file comparison. Each of the command is 
-accompanied with the old version and the new version say oldFile.ext newFile.ext
+	To be able to see the difference between two versions of a file, 
+	use the diff command on unix-based OSs with a -u flag. On Windows however,
+	make use of the fc command which means file comparison. Each of the command is 
+	accompanied with the old version and the new version say oldFile.ext newFile.ext
 
-The most interesting is the use of unix based diff command as it presentation is different and 
-probably a little different than that of windows.
-It uses the + to indicate the addition and - to indicate where characters were changed or removed.
+	The most interesting is the use of unix based diff command as it presentation is different and 
+	probably a little different than that of windows.
+	It uses the + to indicate the addition and - to indicate where characters were changed or removed.
 
 
 Viewing file history can make you a more efficient programmer
 
-When developing, things may breakdown, unexpected changes may occur and they might be need
-to revert back to how it was, the history will guide you to when a program was functional.
-Having the ability to be able to do this will certainly make one a more proficient developer, and will
-also help in identifying bugs where necessary.
+	When developing, things may breakdown, unexpected changes may occur and they might be need
+	to revert back to how it was, the history will guide you to when a program was functional.
+	Having the ability to be able to do this will certainly make one a more proficient developer, and will
+	also help in identifying bugs where necessary.
 
-`git diff`
+	`git diff`
 
 Pros and Cons of Manually committing eg Git and Google Docs
 
-When making commits manually, he helps you to logically seperate stages in your development and tag them with a message. This helps when there is a need to review and revert back. However, determining when to make a commit is equally important. When commiting minor changes often, it makes the history too clustered where as allowing too much code before committing makes it difficult to handle. Therefore there should be a need for balance at logical points.
-Like Googe docs, they make a lot commits and often too small changes. The history is always clustered to read. Google docs commits cannot be read offline, except online. Whereas, with Git commit logs can be viewed offline and online.
+	When making commits manually, he helps you to logically seperate stages in your development and tag them with a message. This helps when there is a need to review and revert back. However, determining when to make a commit is equally important. When commiting minor changes often, it makes the history too clustered where as allowing too much code before committing makes it difficult to handle. Therefore there should be a need for balance at logical points.
+	Like Googe docs, they make a lot commits and often too small changes. The history is always clustered to read. Google docs commits cannot be read offline, except online. Whereas, with Git commit logs can be viewed offline and online.
 
-Also, git allows multiple files to be commited at once while Google docs saves only per file.
+	Also, git allows multiple files to be commited at once while Google docs saves only per file.
 
 Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
 
-Git allows multiple files to be commited at once because many files might be related for a feature to work. Example, a style.css and an index.html will need to work together to present a webpage. However, Google docs saves changes independently of others and does not allow with a message.
+	Git allows multiple files to be commited at once because many files might be related for a feature to work. Example, a style.css and an index.html will need to work together to present a webpage. However, Google docs saves changes independently of others and does not allow with a message.
 
-it was not originally made to serve such purpose.
+	it was not originally made to serve such purpose.
 
 
 How can you use the commands git log and git diff to view the history of files?
 
-git log command shows the commit history with the commit messages. It also show the id of each commit, the author and the time. Git diff on the other hand compares two commits and indicates their differences. it shows what has been added and what has been deleted.
+	git log command shows the commit history with the commit messages. It also show the id of each commit, the author and the time. Git diff on the other hand compares two commits and indicates their differences. it shows what has been added and what has been deleted.
 
-Depending on the history of commits, git log may not exit immediately so, you will need to press q to quit whenever you have seen what you are looking for.
+	Depending on the history of commits, git log may not exit immediately so, you will need to press q to quit whenever you have seen what you are looking for.
 
 How might using version control make you more confident to make changes that could break something?
 
-I am more confident in making changes because the git version control system gives me the ability to
-revert back to a particular commit, which i can choose to discard a particular commit moving back and forth.
+	I am more confident in making changes because the git version control system gives me the ability to
+	revert back to a particular commit, which i can choose to discard a particular commit moving back and forth.
 
 Now that you have your workspace set up, what do you want to try using Git for?
 
-I will henceforth be using git more efficiently, knowing when to commit and the shortcuts to ease using it. I know it will come with time but i want to go through the curve.
+	I will henceforth be using git more efficiently, knowing when to commit and the shortcuts to ease using it. I know it will come with time but i want to go through the curve.
 
 
-The main reason to use git clone rather than copying the directory is because git clone will also copy the commit history of the repository.
- However, copying can be done on any directory, whereas git clone only works on a Git repository
+	The main reason to use git clone rather than copying the directory is because git clone will also copy the commit history of the repository.
+	 However, copying can be done on any directory, whereas git clone only works on a Git repository
 
-git diff - In order for the changes adding the mute button to be shown as additions, the commit with the mute button needs to be the second argument to git diff. That is because git diff considers the first argument as the "original", and the second argument as the "new" version, so additions are lines present in the second argument but not the first.
+	git diff - In order for the changes adding the mute button to be shown as additions, the commit with the mute button needs to be the second argument to git diff. That is because git diff considers the first argument as the "original", and the second argument as the "new" version, so additions are lines present in the second argument but not the first.
