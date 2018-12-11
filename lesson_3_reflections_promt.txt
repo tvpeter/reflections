@@ -21,7 +21,15 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    When we clone a repo, git creates a branch called origin/master that holds the state of the remote branch. 
+    State here implies the last commit on the remote branch (master). 
+    This helps to keep track of commits on the remote branch compare to the local master branch. 
+    Git uses this origin/master branch to remind you of changes you have not pushed to remote that are on the local master branch. 
+    However, if you fetched the latest changes made by your collaborator, git uses this branch to indicate that 
+    the changes in the remote are ahead, and you have not merge. When the remote branch is updated and 
+    the local master branch is also updated, git uses this branch to compare and inform you that your 
+    local and remote branches are not in sync and you need to merge. In summary, the origin/master branch is 
+    essential in managing the state of the remote branch compare to your local branch.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
