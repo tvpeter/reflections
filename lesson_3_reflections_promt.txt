@@ -34,7 +34,18 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Collaborating without the use of Git would involve the use of emails and google docs. The google docs will 
+    serve to hold files and their changes, while the email would serve to state each process and what is involved.
+
+    However, this would rather be more challenging as trying to track specific changes in each file and history. Again,
+    the trying to seperate where new ideas can be tested out, viewed and discussed by the team before been accepted 
+    and added to the main document would means more work, more files and more careful organisation, and the chances
+    of tempering with the workflow would have been too high. 
+
+    These and many more are the advantages that Git and Github offers. From the start of a project, you determine 
+    the workflow with tracking of files at each point, to deciding which to aspect of the project is made public and which
+    is been worked on. Also, collaboration is seemless as each module can be reviewed before it is accepted into the main
+    aspect of the work.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
