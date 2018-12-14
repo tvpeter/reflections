@@ -51,4 +51,14 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    One can work entirely with only master branch and push directly whenever the need arises. However, 
+    there are instances when it is ideal to create other branches to work with. These could either be
+    that you want to add new features without risking breaking the main branch or want to test changes 
+    /refactor your code. Branching offers its advantages same as not branching although has some benefits.
+    Branching helps to set the stage for testing out ideas and collaborating separately without risking
+    breaking the main built. You and your team can work on changes in a separate branch and once they are acceptable by all involved, they can now be merged back and made accessible for everyone. This 
+    separation set the stage for conflicts to be handled efficiently. on the other hand, one can still 
+    handle adding features and refactoring without creating other branches but collaboration and publishing changes will be a little bit cubersome.
+
+    Therefore, branching presents a better way to organise the workflow for collaboration than without
+    branching.
